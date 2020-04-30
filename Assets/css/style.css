@@ -1,0 +1,654 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	background: #F0F2F5;
+}
+
+/* 	Header */
+#header {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 9rem;
+}
+
+.wrap-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 80%;
+}
+
+.title-logo {
+	margin: 0;
+}
+
+.logo-img {
+	width: 16.25rem;
+}
+
+/* 	Menu */
+
+.menu {
+	display: flex;
+	jusstify-content: center;
+}
+
+.menu-list {
+	display: flex;
+	width: 100%;
+	list-style: none;
+}
+
+.menu-item {
+	margin: 1rem;
+	color: #e30059;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+/* Fim Header */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	background-color: #FCFCFC;
+}
+
+/* Frase */
+.container-frase {
+	width: 100vw;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	background-color: #3DB5B0;
+	border-top:  1.25rem solid transparent;
+	border-image: url('../img/Borda_triangulos.svg')  40 round;
+}
+
+#grass-wall{
+	height: 100%;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.grass-wall-block{
+
+}
+
+.grass-wall-text{
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #F0F2F5;
+	line-height: 3.0625rem;
+	padding-bottom: 2rem;
+}
+
+.grass-wall-author{
+	font-size: 1.5rem;
+	color: #1D1D1D;
+}
+
+
+/* Fim Frase */
+
+
+/*section ações de impacto*/
+#container_logos {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FCFCFC;  
+}
+
+.content_acoes {
+	max-width: 1366px;
+	width: 70%;
+}
+
+.box_title_impacto {
+	/* width: 100%; */
+	height: 15vw;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 50px;
+	color: #1D1D1D;
+}
+
+.box_title_impacto p {
+	width: 100%;
+	padding-left: 5rem;
+}
+
+.wrap_acoes {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1.5rem;
+}
+
+.box_acao {
+	width: 18rem;
+	height: 23.3125rem;
+	align-content: center;
+	background-color: #F0F2F5;
+	margin-right: 2.3125rem;
+}
+
+/*bloco vai na web*/
+.vai_na_web-1 {
+	height: 12.6875rem;
+	background-color: #0F2B92;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.vai_na_web-1 img {
+	width: 7.75rem;   
+}
+
+.vai_na_web-2 p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+}
+
+.vai_na_web-2 a {
+	font-size: 15px;
+	color: #E30059;
+}
+
+/*bloco estúdio VNW*/
+.estudio-1 {
+	height: 12.6875rem;
+	background-color: #FEAC2D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.estudio-1 img {
+	width: 10.25rem;   
+}
+
+.estudio-2 p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+}
+
+/*bloco fashion*/
+.fashion-1 {
+	height: 12.6875rem;
+	background-color:#141414;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fashion-1 img {
+	width: 12.6875rem;
+}
+
+.fashion-2 p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+	/* padding: 1.5rem 0 0 1rem; */
+}
+
+.fashion a{
+	font-size: 15px;
+	color: #E30059;
+}
+
+/*bloco startupin*/
+.startupin-1 {
+	height: 12.6875rem;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.startupin-1 img {
+	width: 12.125rem;   
+}
+
+.startupin-2 p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+}
+
+/*bloco fgv*/
+.fgv-1 {
+	height: 12.6875rem;
+	background-color: #85CFE8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fgv-1 img {
+	width: 10.75rem; 
+}
+
+.fgv-2 p{
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+}
+
+/*bloco assessoria de ongs*/
+.assessoria-1 {
+	height: 12.6875rem;
+	background-color: #EC7404;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.assessoria-1 img {
+	width: 9.125rem;    
+}
+
+.assessoria-2 p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 14px;
+}
+/*fim section ações de impacto*/
+
+
+
+.section-global {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center
+}
+
+.content-global {
+	max-width: 1366px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('../img/Grafico-Circulo_cores.svg') no-repeat 52rem 4rem;
+}
+
+.box-description-global {
+	width: 57%;
+}
+
+.title-Global {
+	margin-bottom: 1.25rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3.125rem;
+	font-weight: bold;
+	color: #1D1D1D;
+}
+.p-global {
+	width: 409px;
+	margin-bottom: 4.0625rem;
+	font-size: 1.25rem;
+	text-shadow: 0px 0px 0.5px black;
+	line-height: 22px;
+}
+.global-goals {
+    /* width: 700px; */
+    z-index: 1;
+}
+.circulo-cores {
+    width: 450px;
+    /* position: relative; */
+    z-index: 0;
+}
+
+/* Rede de Inivação */
+
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: center; 
+}
+
+.content {
+	max-width: 1366px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.box-title {
+	width: 100%;
+	height: 25vw;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 50px;
+	color: #1D1D1D;
+}
+
+.box-title span {
+	width: 100%;
+	padding-left: 5rem;
+}
+
+.box-title h2 {
+	width: 23rem;
+	padding-bottom: 2rem;
+	font-family: "proxima nova black";
+	color: #1D1D1D;
+	font-size: 3.125rem;
+}
+
+.box-title p{
+	width: 24rem;
+	font-family: "proxima nova";
+	font-size: 1.25rem;
+	line-height: 1.625rem;
+}
+
+.wrap-rede{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1.5rem;
+}
+
+.box-rede {
+	width: 18rem;
+	height: 23.3125rem;
+	align-content: center;
+	background-color: #F0F2F5;
+	margin-right: 2.3125rem
+}
+
+/* Casa de Maria */
+.figure-casa {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFDEDD;
+}
+
+/* Reciclaçao */
+.figure-reciclacao {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFD3;
+}
+
+/* Fashion Masks */
+.figure-fashion{
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #D4F7E3;
+}
+
+/* Turma da Sopa */
+.figure-sopa {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFDE;
+}
+
+/* Há Esperança */
+.figure-esperanca {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #DBFFE5;
+}
+
+/* Alimentando Vidas */
+.figure-vidas {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFE5E6;
+}
+
+/* Atraves da Musica */
+.figure-musica {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFE6FB;
+}
+
+/* Pontinho de luz */
+.figure-pontinho {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #BFF1FF;
+}
+
+/* OSC Legal */
+.figure-osc {
+	height: 12.6875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFD4D1;
+}
+/* Fim rede de Inovação */
+
+/* Premiação */
+.container {
+	width: 100vw;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.content-premio {
+	max-width: 1366px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+ 
+.r_inovacao {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box-title-premio {
+	height: 25vh;
+	margin-bottom: 4rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.title-premio {
+	font-size: 3.125rem;
+}
+
+.wrap-description {
+	height: 35vh;
+	display: flex;
+}
+
+.figure-premio {
+	width: 30%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+.logo_premio {
+	padding: 1rem;
+}
+
+.box-description-premio {
+	width: 60%;
+}
+
+.iv {
+	padding-bottom: 1.5rem;
+	font-size: 1.5rem;
+	color: #1D1D1D;
+	line-height: 2rem;
+}
+
+.description_IV {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.foto {
+	width: 100%;
+	position: relative;
+	top: 3rem;
+}
+
+.borda-top {
+	width: 100vw;
+	z-index: 1;
+}
+/* Fim Premiação */
+
+/* Precisa Ser */
+.container-about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 50vh;
+	background-color: #F0F2F5;
+	z-index: 1;
+}
+
+.wrap-about {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+}
+
+.box-description {
+	max-width: 50%;
+}
+
+.description {
+	max-width: 392px;
+	min-width: 302px;
+	margin-right: 1.5rem;
+	font-weight: 400;
+	font-size: 1.25rem;
+	color: #1D1D1D;
+	line-height: 1.75rem;
+}
+
+.menu-footer {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+}
+
+.menu-list-footer {
+	width: 60%;
+	list-style: none;
+	cursor: pointer;
+	margin: 0;
+}
+
+.menu-item-footer {
+	margin-bottom: 1rem;
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: #E30059;
+}
+
+.box-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 5rem;
+	list-style: none;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	text-align: left;
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0px;
+	color: #1D1D1D;
+	opacity: 1;
+}
+
+.contact-item img {
+	margin-right: .75rem;
+}
+/* Fom Precisa ser */
+
+/* Footer */
+
+#footer {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 3.6875rem;
+	background: #85CFE8;
+}
+
+.wrap-author {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrap-author img {
+	width: 3.3125rem;
+	margin-left: .5rem;
+}
+
+.author-description {
+	color: #1D1D1D;
+	font-size: 1.25rem;
+}
+/* Fim Footer */

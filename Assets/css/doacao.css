@@ -1,0 +1,284 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	font-size: 16px;
+	background: #F0F2F5;
+}
+
+#body {
+    background-image: url(assets/heart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 	Header */
+#header {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 7.5rem;
+}
+
+.wrap-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 80%;
+	max-width: 1366px;
+	margin-bottom: 1rem;
+}
+
+.title-logo {
+	margin: 0;
+}
+
+.logo-img {
+	width: 16.25rem;
+	margin-left: 1rem;
+}
+
+/* 	Menu */
+
+.menu {
+	display: flex;
+	jusstify-content: center;
+}
+
+.menu-list {
+	display: flex;
+	width: 100%;
+	list-style: none;
+}
+
+.menu-item {
+	margin: 1rem;
+	color: #e30059;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.topic {
+	margin-left: 1.5rem;
+	list-style: initial;
+}
+
+/*INSTITUTO MAIN*/
+.container-home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10rem;
+    margin-top: 10rem;
+    max-width: 1366px;
+}
+
+.container-text {
+    width: 40%;
+}
+
+.image-home {
+    width: 400px;
+}
+
+
+
+/*INSTITUTO MAIN*/
+
+.header {
+	display: flex;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+/* Doe Tambem */
+.text-test {
+	margin: 0 1rem;
+	width: 9rem;
+	height: 2rem;
+	background: #F6A800;
+	font-size: 1.125rem;
+	color: #fff;
+	border-radius: 0 0 15px 15px;
+	border-width: 0 1px 1px 1px;
+	cursor: pointer;
+}
+
+.text-test::before {
+content:'';
+padding: 5px;
+border-radius: 0 100% 0 0;
+border-right: 10px solid #F6A800;
+border-top: 0 solid #F6A800;
+top: 2px; 
+left: -8px;
+position: relative;
+}
+
+.text-test::after {
+	content: '';
+	padding: 5px;
+	border-radius: 100% 0 0 0;
+	border-left: 15px solid #F6A800;
+	border-top: 0 solid #F6A800;
+	top: 2px;
+	left: 7px;
+	position: relative;
+}
+
+/* Idioma */
+.list-lang {
+	list-style: none;
+	display: flex;
+}
+
+.topic {
+	margin-left: 1.5rem;
+	list-style: initial;
+}
+
+/*DOAÇÃO MAIN*/
+.container-campaign {
+    display: flex;
+    justify-content: center;
+		width: 100vw;
+		height: 85vh;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 90%;
+	height: 95%;
+	border: 2px solid #F6A800;
+}
+
+.box-content {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.wrap-description {
+	width: 50%;
+	margin-bottom: 1.5rem;
+}
+@media(max-width:1233px) {
+	.wrap-description {
+		width: 70%;
+	}
+}
+
+.container-text, .container-paragraph {
+    width: 45%;
+    margin-top: 2rem;
+}
+
+.container-links {
+    width: 43%;
+    margin: 2rem 0 0 0;
+}
+
+.campaign-title {
+	margin: 1.5rem 0 1rem;
+	font-size: 3.125rem;
+	font-weight: 600;
+}
+
+.campaign-subtitle {
+    font-weight: 600;
+		color: #E30059;
+		font-size: 1.4375rem;
+}
+
+.campaign-paragraph {
+		width: 430px;
+		margin: 1rem 0;
+		font-size: 1.25rem;
+		line-height: 1.75rem;
+}
+
+.know-link {
+	font-size: 1.25rem;
+	color: #3DB5B0;
+}
+
+.letter-icon {
+    width: auto;
+    margin: 0 .5rem;
+}
+
+.read-link {
+	color: #E30059;
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+.container-data {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.wrap-donation {
+	display: flex;
+	width: 55%;
+	margin-bottom: 2rem;
+}
+
+@media(max-width: 1233px) {
+	.wrap-donation {
+		width: 70%;
+	}
+}
+
+.container-bank {
+    width: 20rem;
+    border-style: solid none solid solid;
+    border-color: #85CFE8;
+    border-width: 2px;
+    border-radius: 20px 0 0 20px;
+    line-height: 2;
+}
+
+.bank-paragraph {
+    font-weight: 600;
+    margin: 1.5rem 0 1.5rem 3rem;
+}
+
+.list-bank {
+    list-style: none;
+    margin: 0 0 1.5rem 3rem;
+}
+
+.bank-item {
+	height: 1.5rem;
+}
+
+.list-payment {
+    margin-left: 5rem;
+    list-style: none;
+    line-height: 2.5;
+}
+.list-payment li {
+    font-weight: 600;
+}
+
+.container-payment {
+    width: 20rem;
+    border: 2px solid #85CFE8;
+    border-radius: 0 20px 20px 0;
+}
+/*DOAÇÃO MAIN*/
+
