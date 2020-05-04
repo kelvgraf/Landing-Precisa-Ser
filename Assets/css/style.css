@@ -13,6 +13,9 @@ body {
 	font-size: 16px;
 	background: #F0F2F5;
 }
+a {
+	text-decoration: none;
+}
 
 /* 	Header */
 #header {
@@ -27,6 +30,7 @@ body {
 	justify-content: space-between;
 	align-items: flex-end;
 	width: 80%;
+	padding-bottom: .75rem;
 }
 
 .title-logo {
@@ -66,6 +70,162 @@ main {
 	width: 100vw;
 	background-color: #FCFCFC;
 }
+
+/* Campanha */
+.header {
+	display: flex;
+	justify-content: flex-end;
+	width: 80%;
+	height: 4rem;
+	border-top: solid #F6A800 2px;
+}
+
+/* Doe Tambem */
+.text-test {
+	margin: 0 1rem;
+	width: 9rem;
+	height: 2rem;
+	background: #F6A800;
+	font-size: 1.125rem;
+	color: #fff;
+	border-radius: 0 0 15px 15px;
+	border-width: 0 1px 1px 1px;
+	cursor: pointer;
+}
+
+.text-test::before {
+content:'';
+padding: 5px;
+border-radius: 0 100% 0 0;
+border-right: 10px solid #F6A800;
+border-top: 0 solid #F6A800;
+top: 2px; 
+left: -8px;
+position: relative;
+}
+
+.text-test::after {
+	content: '';
+	padding: 5px;
+	border-radius: 100% 0 0 0;
+	border-left: 15px solid #F6A800;
+	border-top: 0 solid #F6A800;
+	top: 2px;
+	left: 7px;
+	position: relative;
+}
+
+/* Idioma */
+.list-lang {
+	list-style: none;
+	display: flex;
+	padding-top: .5rem;
+	padding-right: .5rem;
+}
+
+.topic {
+	margin-left: 1.5rem;
+	list-style: initial;
+}
+
+.container-campanha {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F0F2F5;
+}
+
+.content-campanha {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	max-width: 1366px;
+	width: 100%;
+	height: 80%;
+}
+
+.boxcontent-l {
+	display: flex;
+	flex-wrap: wrap;
+	width: 35%;
+}
+
+.tit {
+	display: flex;
+	color: #EC7404;
+	width: 600px;
+	margin: 0px;
+	height: 30px;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.3125rem;
+}
+
+.subtit {
+	display: flex;
+	margin: 0px;
+	color: #1D1D1D;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 2.5rem;
+}
+.description {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 30px;
+	color: #1D1D1D;
+	margin: 0px;
+	align-content: center;
+	height: 185px;
+}
+
+.donation {
+	display: flex;
+	background-color: #E30059;
+	color: #F0F2F5;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	width: 162px;
+	height: 40px;
+	justify-content: center;
+	border: 1px solid;
+	border-radius: 40px;
+	margin-right: .5rem;
+}
+
+.mural {
+	display: flex;
+	background-color: transparent;
+	color: #EC7404;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	border: 1px solid #EC7404;
+	border-radius: 20px;
+	width: 206px;
+	height: 40px;
+	justify-content: center;
+	padding: 0px;
+	margin-left: .5rem;
+}
+
+.boxcontent-r {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-home {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 1rem;
+}
+
+/* Fim Campanha */
 
 /* Frase */
 .container-frase {
@@ -133,8 +293,7 @@ main {
 }
 
 .box_title_impacto p {
-	width: 100%;
-	padding-left: 5rem;
+	width: 80%;
 }
 
 .wrap_acoes {
@@ -168,12 +327,16 @@ main {
 .vai_na_web-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
+	font-size: .875rem;
+	padding: 1.5rem .5rem .5rem 1.5rem;
+	line-height: 1.25rem;
 }
 
 .vai_na_web-2 a {
-	font-size: 15px;
+	padding-left: 1.5rem;
+	font-size: .875rem;
 	color: #E30059;
+	text-decoration: underline;
 }
 
 /*bloco estúdio VNW*/
@@ -192,7 +355,9 @@ main {
 .estudio-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
+	font-size: .875rem;
+	padding: 1.5rem .5rem .5rem 1.5rem;
+	line-height: 1.25rem;
 }
 
 /*bloco fashion*/
@@ -211,13 +376,16 @@ main {
 .fashion-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
-	/* padding: 1.5rem 0 0 1rem; */
+	font-size: .875rem;
+	padding: 1.5rem;
+	line-height: 1.25rem;
 }
 
-.fashion a{
-	font-size: 15px;
+.fashion-2 a {
+	padding-left: 1.5rem;
+	font-size: .875rem;
 	color: #E30059;
+	text-decoration: underline;
 }
 
 /*bloco startupin*/
@@ -236,7 +404,9 @@ main {
 .startupin-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
+	font-size: .875rem;
+	padding: 1.5rem .5rem .5rem 1.5rem;
+	line-height: 1.25rem;
 }
 
 /*bloco fgv*/
@@ -252,10 +422,12 @@ main {
 	width: 10.75rem; 
 }
 
-.fgv-2 p{
+.fgv-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
+	font-size: .875rem;
+	padding: 1.5rem .5rem .5rem 1.5rem;
+	line-height: 1.25rem;
 }
 
 /*bloco assessoria de ongs*/
@@ -274,7 +446,9 @@ main {
 .assessoria-2 p {
 	align-items: flex-start;
 	color: #1D1D1D;
-	font-size: 14px;
+	font-size: .875rem;
+	padding: 1.5rem .5rem .5rem 1.5rem;
+	line-height: 1.25rem;
 }
 /*fim section ações de impacto*/
 
@@ -300,6 +474,7 @@ main {
 
 .box-description-global {
 	width: 57%;
+	height: 40vh;
 }
 
 .title-Global {
@@ -314,7 +489,7 @@ main {
 	margin-bottom: 4.0625rem;
 	font-size: 1.25rem;
 	text-shadow: 0px 0px 0.5px black;
-	line-height: 22px;
+	line-height: 1.75rem;
 }
 .global-goals {
     /* width: 700px; */
@@ -354,8 +529,7 @@ main {
 }
 
 .box-title span {
-	width: 100%;
-	padding-left: 5rem;
+	width: 80%;
 }
 
 .box-title h2 {
@@ -382,10 +556,31 @@ main {
 
 .box-rede {
 	width: 18rem;
-	height: 23.3125rem;
+	height: 25.3125rem;
 	align-content: center;
 	background-color: #F0F2F5;
 	margin-right: 2.3125rem
+}
+
+.rede-descricao {
+	height: 42%;
+}
+
+.rede-descricao p {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: 1rem;
+	padding: 1.5rem .5rem 1.75rem 1.5rem;
+	line-height: 1.25rem;
+}
+
+.location {
+	align-items: flex-start;
+	color: #1D1D1D;
+	font-size: .875rem;
+	font-weight: 600;
+	padding-left: 1.5rem;
+	line-height: 1.25rem;
 }
 
 /* Casa de Maria */
@@ -642,13 +837,55 @@ main {
 	align-items: center;
 }
 
-.wrap-author img {
+.img-coracao {
+	width: 2.125rem;
+}
+
+.loog-vnw {
 	width: 3.3125rem;
 	margin-left: .5rem;
 }
 
 .author-description {
+	display: flex;
+	align-items: center;
 	color: #1D1D1D;
 	font-size: 1.25rem;
 }
 /* Fim Footer */
+
+/* Nimate slide */
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+	transition: background-color 0.6s ease;
+	position: relative;
+	bottom: 32px;
+}
+
+.active {
+  background-color: #717171;
+}
