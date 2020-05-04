@@ -15,9 +15,14 @@ body {
 }
 
 #body {
-    background-image: url(assets/heart.jpg);
+    background-image: url('../img/Icone-Coracao.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+		background-size: 50%;
+		background-position: center;
+}
+
+a {
+	text-decoration: none;
 }
 
 /* 	Header */
@@ -73,12 +78,12 @@ body {
 
 /*INSTITUTO MAIN*/
 .container-home {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10rem;
-    margin-top: 10rem;
-    max-width: 1366px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 10rem;
+	margin-top: 10rem;
+	max-width: 1366px;
 }
 
 .container-text {
@@ -159,6 +164,7 @@ position: relative;
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
+	max-width: 1366px;
 	height: 95%;
 	border: 2px solid #F6A800;
 }
@@ -244,17 +250,18 @@ position: relative;
 }
 
 .container-bank {
-    width: 20rem;
-    border-style: solid none solid solid;
-    border-color: #85CFE8;
-    border-width: 2px;
-    border-radius: 20px 0 0 20px;
-    line-height: 2;
+	width: 20rem;
+	border-style: solid none solid solid;
+	border-color: #85CFE8;
+	border-width: 2px;
+	border-radius: 20px 0 0 20px;
+	line-height: 2;
 }
 
 .bank-paragraph {
-    font-weight: 600;
-    margin: 1.5rem 0 1.5rem 3rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin: 1.5rem 0 1.5rem 3rem;
 }
 
 .list-bank {
@@ -264,6 +271,10 @@ position: relative;
 
 .bank-item {
 	height: 1.5rem;
+	font-size: 1.125rem;
+}
+.one-item {
+	font-weight: 600;
 }
 
 .list-payment {
@@ -276,7 +287,10 @@ position: relative;
 }
 
 .container-payment {
-    width: 20rem;
+		width: 20rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
     border: 2px solid #85CFE8;
     border-radius: 0 20px 20px 0;
 }
