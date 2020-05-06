@@ -14,13 +14,6 @@ body {
 	background: #F0F2F5;
 }
 
-#body {
-    background-image: url('../img/Icone-Coracao.svg');
-    background-repeat: no-repeat;
-		background-size: 50%;
-		background-position: center;
-}
-
 a {
 	text-decoration: none;
 }
@@ -28,18 +21,29 @@ a {
 /* 	Header */
 #header {
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	height: 7.5rem;
+	height: 100vh;
+	background: url('../img/Icone-Coracao.svg') no-repeat center 50%;
+}
+
+.content-header {
+	max-width: 1366px;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .wrap-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 80%;
-	max-width: 1366px;
-	margin-bottom: 1rem;
+	width: 95%;
+	height: 9rem;
 }
 
 .title-logo {
@@ -48,7 +52,6 @@ a {
 
 .logo-img {
 	width: 16.25rem;
-	margin-left: 1rem;
 }
 
 /* 	Menu */
@@ -69,11 +72,6 @@ a {
 	color: #e30059;
 	font-size: 2rem;
 	cursor: pointer;
-}
-
-.topic {
-	margin-left: 1.5rem;
-	list-style: initial;
 }
 
 /*INSTITUTO MAIN*/
@@ -143,6 +141,8 @@ position: relative;
 .list-lang {
 	list-style: none;
 	display: flex;
+	padding-top: .5rem;
+	padding-right: .5rem;
 }
 
 .topic {
@@ -152,10 +152,10 @@ position: relative;
 
 /*DOAÇÃO MAIN*/
 .container-campaign {
-    display: flex;
-    justify-content: center;
-		width: 100vw;
-		height: 85vh;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100%;
 }
 
 .container {

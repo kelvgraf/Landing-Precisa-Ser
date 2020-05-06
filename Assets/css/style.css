@@ -20,17 +20,28 @@ a {
 /* 	Header */
 #header {
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	width: 100vw;
-	height: 9rem;
+	height: 100vh;
+}
+
+.content-header {
+	max-width: 1366px;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .wrap-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 80%;
-	padding-bottom: .75rem;
+	width: 95%;
+	height: 9rem;
 }
 
 .title-logo {
@@ -61,21 +72,11 @@ a {
 	cursor: pointer;
 }
 
-/* Fim Header */
-
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
-	background-color: #FCFCFC;
-}
-
 /* Campanha */
 .header {
 	display: flex;
 	justify-content: flex-end;
-	width: 80%;
+	width: 100%;
 	height: 4rem;
 	border-top: solid #F6A800 2px;
 }
@@ -129,8 +130,8 @@ position: relative;
 }
 
 .container-campanha {
-	width: 100vw;
-	height: 90vh;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -226,6 +227,16 @@ position: relative;
 }
 
 /* Fim Campanha */
+
+/* Fim Header */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	background-color: #FCFCFC;
+}
 
 /* Frase */
 .container-frase {
@@ -839,9 +850,10 @@ position: relative;
 
 .img-coracao {
 	width: 2.125rem;
+	margin: 0 .5rem;
 }
 
-.loog-vnw {
+.logo-vnw {
 	width: 3.3125rem;
 	margin-left: .5rem;
 }
