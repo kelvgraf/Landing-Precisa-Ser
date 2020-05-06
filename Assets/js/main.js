@@ -22,31 +22,3 @@
 // Slide single
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(index) {
-  showSlides(slideIndex += index);
-}
-
-// Thumbnail image controls
-function currentSlide(index) {
-  showSlides(slideIndex = index);
-}
-
-function showSlides(index) {
-  var number;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (index > slides.length) {slideIndex = 1}
-  if (index < 1) {slideIndex = slides.length}
-  for (number = 0; number < slides.length; number++) {
-      slides[number].style.display = "none";
-  }
-  for (number = 0; number < dots.length; number++) {
-      dots[number].className = dots[number].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}

@@ -158,10 +158,10 @@
 				<div class="box-img">
 					<img src="../img/Icone-Seta_rosa.svg" alt="Seta para passar as fotos" onclick="plusSlides(-1)"  class="arrow-left arrow">
 					<div class="wrap-slide">
-						<img src="../img/PHOTO-2019-06-05-11-50-12.png" alt="" class="img-slide mySlides fade">
-						<img src="../img/test.jpg" alt="" class="img-slide mySlides fade">
-						<img src="../img/test1.jpg" alt="" class="img-slide mySlides fade">
-						<img src="../img/test.png" alt="" class="img-slide mySlides fade">
+						<img src="../img/PHOTO-2019-06-05-11-50-12.png" alt="" class="img-slide img-slide fade">
+						<img src="../img/test.jpg" alt="" class="img-slide img-slide fade">
+						<img src="../img/test1.jpg" alt="" class="img-slide img-slide fade">
+						<img src="../img/test.png" alt="" class="img-slide img-slide fade">
 						<div style="text-align:center">
 							<span class="dot" onclick="currentSlide(1)"></span>
 							<span class="dot" onclick="currentSlide(2)"></span>
@@ -200,9 +200,15 @@
 				</div>
 				<nav class="menu-footer">
 					<ul class="menu-list-footer">
-						<li class="menu-item-footer">Ações</li>
-						<li class="menu-item-footer">Rede</li>
-						<li class="menu-item-footer">Contato</li>
+						<a href="../../index.html">
+							<li class="menu-item-footer">Ações</li>
+						</a>
+						<a href="./coments.html">
+							<li class="menu-item-footer">Rede</li>
+						</a>
+						<a href="./doacao.html">
+							<li class="menu-item-footer">Contato</li>
+						</a>
 					</ul>
 				</nav>
 				<ul class="box-contact">
@@ -210,10 +216,12 @@
 						<img src="../img/Icone-Email.svg" alt="">
 						ola@precisaser.og
 					</li>
-					<li class="contact-item">
-						<img src="../img/Icone-Facebook.svg" alt="">
-						facebook.com/precisaser
-					</li>
+					<a href="https://www.facebook.com/precisaser" target="_blank">
+						<li class="contact-item">
+							<img src="../img/Icone-Facebook.svg" alt="">
+							facebook.com/precisaser
+						</li>
+					</a>
 				</ul>
 			</div>
 		</section>
@@ -221,10 +229,42 @@
 	<footer id="footer">
 		<div class="content">
 			<div class="wrap-author">
-				<p class="author-description">Desenvolvido com <img src="../img/Icone-Coracao_footer.svg" alt="icone coração" class="img-coracao"> por</p> <img src="../img/VnW-Logo.svg" alt="Logo do Vai Na Web" class="logo-vnw">
+				<p class="author-description">Desenvolvido com <img src="../img/Icone-Coracao_footer.svg" alt="icone coração" class="img-coracao"> por</p>
+				<a href="https://www.vainaweb.com.br/" target="_blank">
+					<img src="../img/VnW-Logo.svg" alt="Logo do Vai Na Web" class="logo-vnw">
+				</a>
 			</div>
 		</div>
 	</footer>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+	
+		// Next/previous controls
+		function plusSlides(index) {
+			showSlides(slideIndex += index);
+		}
+	
+		// Thumbnail image controls
+		function currentSlide(index) {
+			showSlides(slideIndex = index);
+		}
+	
+		function showSlides(index) {
+			var number;
+			var slides = document.getElementsByClassName("img-slide");
+			var dots = document.getElementsByClassName("dot");
+			if (index > slides.length) {slideIndex = 1}
+			if (index < 1) {slideIndex = slides.length}
+			for (number = 0; number < slides.length; number++) {
+					slides[number].style.display = "none";
+			}
+			for (number = 0; number < dots.length; number++) {
+					dots[number].className = dots[number].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
 </body>
-<script src="../js/main.js"></script>
 </html>

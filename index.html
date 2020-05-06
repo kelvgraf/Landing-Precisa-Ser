@@ -7,69 +7,71 @@
 	</head>
 	<body>
 		<header id="header">
-			<div class="wrap-header">
-				<span>
-					<a href="./index.html">
-						<h1 class="title-logo">
-							<img src="./Assets/img/Logo-Instituto.svg" alt="logo do Instituto Precisa Ser" class="logo-img">
-						</h1>
-					</a>
-				</span>
-				<nav class="menu">
-					<ul class="menu-list">
+			<div class="content-header">
+				<div class="wrap-header">
+					<span>
 						<a href="./index.html">
-							<li class="menu-item">Ações</li>
+							<h1 class="title-logo">
+								<img src="./Assets/img/Logo-Instituto.svg" alt="logo do Instituto Precisa Ser" class="logo-img">
+							</h1>
 						</a>
-						<a href="./Assets/pages/coments.html">
-							<li class="menu-item topic">Rede</li>
-						</a>
-						<a href="./Assets/pages/doacao.html">
-							<li class="menu-item topic">Contato</li>
-						</a>
-					</ul>
-				</nav>
+					</span>
+					<nav class="menu">
+						<ul class="menu-list">
+							<a href="./index.html">
+								<li class="menu-item">Ações</li>
+							</a>
+							<a href="./Assets/pages/coments.html">
+								<li class="menu-item topic">Rede</li>
+							</a>
+							<a href="./Assets/pages/doacao.html">
+								<li class="menu-item topic">Contato</li>
+							</a>
+						</ul>
+					</nav>
+				</div>
+				<div class="container-campanha">
+					<div class="header">
+						<p class="text-test">doe também</p>
+						<ul class="list-lang">
+							<li class="lang-item">EN</li>
+							<li class="lang-item topic">PT</li>
+						</ul>
+					</div>
+					<div class="content-campanha">
+						<div class="boxcontent-l">
+							<h2 class="tit">CAMPANHA</h2>
+							<p class="subtit">Precisa Ser Solidário</p>
+							<p class="description">Campanha de arrecadação de recursos para garantir a segurança alimentar de famílias em situação de vulnerabilidade e risco social durante a pandemia do coronavírus.</p>
+							<a href="./Assets/pages/doacao.html">
+								<button class="donation">fazer doação</button>
+							</a>
+							<a href="./Assets/pages/coments.html">
+								<button class="mural">ver Mural da Gratidão</button>
+							</a>
+						</div>
+						<div class="boxcontent-r">
+							<!-- <figure class="figure-slide fade"> -->
+								<img src="./Assets/img/Imagem-Home.jpg" style="width:100%" class="figure-slide fade">
+							<!-- </figure> -->
+							<!-- <figure class="figure-slide fade"> -->
+								<img src="./Assets/img/Imagem-Home-2.jpg" style="width:100%" class="figure-slide fade">
+							<!-- </figure> -->
+							
+							<!-- <figure class="figure-slide fade"> -->
+								<img src="./Assets/img/Imagem-Home-3.jpg" style="width:100%" class="figure-slide fade">
+							<!-- </figure>	 -->
+							<div style="text-align:center">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+							</div>							
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<main>
-			<section class="container-campanha">
-				<header class="header">
-					<p class="text-test">doe também</p>
-					<ul class="list-lang">
-						<li class="lang-item">EN</li>
-						<li class="lang-item topic">PT</li>
-					</ul>
-				</header>
-				<div class="content-campanha">
-					<div class="boxcontent-l">
-						<h2 class="tit">CAMPANHA</h2>
-						<p class="subtit">Precisa Ser Solidário</p>
-						<p class="description">Campanha de arrecadação de recursos para garantir a segurança alimentar de famílias em situação de vulnerabilidade e risco social durante a pandemia do coronavírus.</p>
-						<a href="./Assets/pages/doacao.html">
-							<button class="donation">fazer doação</button>
-						</a>
-						<a href="./Assets/pages/coments.html">
-							<button class="mural">ver Mural da Gratidão</button>
-						</a>
-					</div>
-					<div class="boxcontent-r">
-						<!-- <figure class="figure-slide fade"> -->
-							<img src="./Assets/img/Imagem-Home.jpg" style="width:100%" class="figure-slide fade">
-						<!-- </figure> -->
-						<!-- <figure class="figure-slide fade"> -->
-							<img src="./Assets/img/Imagem-Home-2.jpg" style="width:100%" class="figure-slide fade">
-						<!-- </figure> -->
-						
-						<!-- <figure class="figure-slide fade"> -->
-							<img src="./Assets/img/Imagem-Home-3.jpg" style="width:100%" class="figure-slide fade">
-						<!-- </figure>	 -->
-						<div style="text-align:center">
-							<span class="dot"></span> 
-							<span class="dot"></span> 
-							<span class="dot"></span> 
-						</div>							
-					</div>
-				</div>
-			</section>
 			<section class="container-frase">
 				<div id="grass-wall">
 					<div class="grass-wall-block">
@@ -290,9 +292,15 @@
 					</div>
 					<nav class="menu-footer">
 						<ul class="menu-list-footer">
-							<li class="menu-item-footer">Ações</li>
-							<li class="menu-item-footer">Rede</li>
-							<li class="menu-item-footer">Contato</li>
+							<a href="./index.html">
+								<li class="menu-item-footer">Ações</li>
+							</a>
+							<a href="./Assets/pages/coments.html">
+								<li class="menu-item-footer">Rede</li>
+							</a>
+							<a href="./Assets/pages/doacao.html">
+								<li class="menu-item-footer">Contato</li>
+							</a>
 						</ul>
 					</nav>
 					<ul class="box-contact">
@@ -300,10 +308,12 @@
 							<img src="./Assets/img/Icone-Email.svg" alt="">
 							ola@precisaser.og
 						</li>
-						<li class="contact-item">
-							<img src="./Assets/img/Icone-Facebook.svg" alt="">
-							facebook.com/precisaser
-						</li>
+						<a href="https://www.facebook.com/precisaser" target="_blank">
+							<li class="contact-item">
+								<img src="./Assets/img/Icone-Facebook.svg" alt="">
+								facebook.com/precisaser
+							</li>
+						</a>
 					</ul>
 				</div>
 			</section> 
@@ -311,7 +321,9 @@
 		<footer id="footer">
 			<div class="content">
 				<div class="wrap-author">
-					<p class="author-description">Desenvolvido com <img src="./Assets/img/Icone-Coracao_footer.svg" alt="icone coração" class="img-coracao"> por</p> <img src="././Assets/img/VnW-Logo.svg" alt="Logo do Vai Na Web" class="logo-vnw">
+					<p class="author-description">Desenvolvido com <img src="./Assets/img/Icone-Coracao_footer.svg" alt="icone coração" class="img-coracao"> por</p> <a href="https://www.vainaweb.com.br/" target="_blank">
+						<img src="././Assets/img/VnW-Logo.svg" alt="Logo do Vai Na Web" class="logo-vnw">
+					</a>
 				</div>
 			</div>
 		</footer>
@@ -333,7 +345,7 @@
 				}
 				slides[slideIndex-1].style.display = "block";  
 				dots[slideIndex-1].className += " active";
-				setTimeout(showSlides, 5000); 
+				setTimeout(showSlides, 3000); 
 			}
 			</script>
 	</body>
