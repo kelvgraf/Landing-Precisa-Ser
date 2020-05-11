@@ -30,7 +30,7 @@ a {
 
 .content-header {
 	max-width: 1366px;
-	width: 80%;
+	width: 70%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -42,8 +42,9 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	width: 95%;
-	height: 9rem;
+	width: 75%;
+	height: 20vh;
+	padding-bottom: 1.5rem;
 }
 
 .title-logo {
