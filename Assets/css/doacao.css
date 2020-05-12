@@ -30,21 +30,22 @@ a {
 
 .content-header {
 	max-width: 1366px;
-	width: 70%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+    width: 70%;
+    height: 100%;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
 }
 
 .wrap-header {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	width: 75%;
-	height: 20vh;
-	padding-bottom: 1.5rem;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 20vh;
+    padding-bottom: 1.5rem;
 }
 
 .title-logo {
@@ -59,7 +60,7 @@ a {
 
 .menu {
 	display: flex;
-	jusstify-content: center;
+	justify-content: center;
 }
 
 .menu-list {
@@ -75,6 +76,19 @@ a {
 	color: #e30059;
 	font-size: 2rem;
 	cursor: pointer;
+}
+
+#triangulo-para-cima {
+	width: 0; 
+	height: 0; 
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid #F6A800;
+
+	transform: rotate(45deg);
+    position: relative;
+    left: 1.1rem;
+    bottom: 0.3rem;
 }
 
 /*INSTITUTO MAIN*/
@@ -102,7 +116,7 @@ a {
 .header {
 	display: flex;
 	justify-content: flex-end;
-	width: 80%;
+	width: 100%;
 }
 
 /* Doe Tambem */
