@@ -7,7 +7,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	box-sizing: border-box;
 }
 
-/* @import url('https://use.typekit.net/lro0jwh.css'); */
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -27,6 +26,12 @@ a {
 	height: 100vh;
 	background: #F0F2F5;
 }
+
+	@media(max-width: 768px) {
+		#header {
+			height: auto;
+		}
+	}
 
 .content-header {
 	max-width: 1366px;
@@ -150,8 +155,6 @@ a {
 
 .content-campanha {
 	display: flex;
-	align-items: center;
-
 	padding-top: 5rem;
 
 	max-width: 1366px;
@@ -159,12 +162,26 @@ a {
 	height: 100%;
 }
 
+	@media(max-width: 768px) {
+		.content-campanha {
+			display: flex;
+			flex-direction: column;
+			padding-top: 1rem;
+		}
+	}
+
 .boxcontent-l {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-right: 3rem;
 }
+
+	@media(max-width: 768px) {
+		.boxcontent-l {
+			padding-bottom: 3rem;
+		}
+	}
 
 .tit {
 	padding-bottom: .75rem;
@@ -326,9 +343,23 @@ a {
 	color: #1D1D1D;
 }
 
+	@media (max-width: 768px) {
+		.box_title_impacto {
+			margin-top: 3rem;
+			padding-left: 0;
+		}
+	}
+
 .box_title_impacto p {
 	width: 80%;
 }
+
+	@media (max-width: 768px) {
+		.box_title_impacto p {
+			width: 100%;
+		}
+	}
+
 
 .wrap_acoes {
 	width: 100%;
@@ -337,13 +368,28 @@ a {
 	padding-bottom: 1.5rem;
 }
 
+	@media (max-width: 768px) {
+		.wrap_acoes {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+
 .box_acao {
 	width: 18rem;
 	height: 23.3125rem;
+	/* display: flex; */
 	align-content: center;
 	background-color: #F0F2F5;
 	margin-right: 2.3125rem;
 }
+
+	@media (max-width: 768px) {
+		.box_acao {
+			margin-bottom: 2rem;
+		}
+	}
 
 .description p {
 	align-items: flex-start;
@@ -479,6 +525,13 @@ a {
 	background: url('../img/Grafico-Circulo_cores.svg') no-repeat right;
 }
 
+	@media(width: 768px) {
+		.content-global {
+			background: none;
+		}
+
+	}
+
 .box-description-global {
 	width: 100%;
 }
@@ -503,6 +556,13 @@ a {
     /* width: 700px; */
     z-index: 1;
 }
+
+	@media (max-width: 768px) {
+		.global-goals {
+			width: 100%;
+		}
+	}
+
 .circulo-cores {
     width: 450px;
     /* position: relative; */
