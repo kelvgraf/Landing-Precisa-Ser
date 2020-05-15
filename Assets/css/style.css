@@ -44,6 +44,12 @@ a {
 	justify-content: center;
 }
 
+	@media(max-width: 768px) {
+		.content-header {
+			width: 90%;
+		}
+	}
+
 .wrap-header {
 	display: flex;
 	justify-content: space-between;
@@ -61,12 +67,24 @@ a {
 	width: 16.25rem;
 }
 
+	@media(max-width: 768px) {
+		.logo-img {
+			width: 12rem;
+		}
+	}
+
 /* 	Menu */
 
 .menu {
 	display: flex;
-	jusstify-content: center;
+	justify-content: center;
 }
+
+	@media(max-width: 768px) {
+		.menu {
+			display: none;
+		}
+	}
 
 .menu-list {
 	display: flex;
@@ -91,6 +109,12 @@ a {
 	height: 4rem;
 	border-top: solid #F6A800 2px;
 }
+
+	@media(max-width: 425px) {
+		.header {
+			display: none;
+		}
+	}
 
 /* Doe Tambem */
 .text-test {
@@ -215,9 +239,21 @@ a {
 	color: #1D1D1D;
 }
 
+	@media(max-width: 425px) {
+		.description-home {
+			display: none;
+		}
+	}
+
 .box-buttons {
 	display: flex;
 }
+
+	@media(max-width: 425px) {
+		.box-buttons {
+			display: none;
+		}
+	}
 
 .donation {
 	display: flex;
@@ -285,6 +321,12 @@ a {
 	border-image: url('../img/Borda_triangulos.svg')  50 round;
 }
 
+	@media(max-width: 425px) {
+		.container-frase {
+			height: auto;
+		}
+	}
+
 #grass-wall {
 	max-width: 1366px;
 	width: 70%;
@@ -292,8 +334,13 @@ a {
 	padding-left: 4rem;
 	display: flex;
 	align-items: center;
-
 }
+
+	@media(max-width: 768px) {
+		#grass-wall {
+			width: 90%;
+		}
+	}
 
 .grass-wall-text {
 	font-size: 2.5rem;
@@ -330,6 +377,12 @@ a {
 	padding-left: 1.5rem;
 }
 
+	@media(max-width: 768px) {
+		.content_acoes {
+			width: 90%;
+		}
+	}
+
 .box_title_impacto {
 	/* width: 100%; */
 	height: 10vw;
@@ -345,6 +398,7 @@ a {
 
 	@media (max-width: 768px) {
 		.box_title_impacto {
+			height: auto;
 			margin-top: 3rem;
 			padding-left: 0;
 		}
@@ -525,11 +579,19 @@ a {
 	background: url('../img/Grafico-Circulo_cores.svg') no-repeat right;
 }
 
-	@media(width: 768px) {
+	@media(max-width: 768px) {
 		.content-global {
+			width: 90%;
 			background: none;
+			margin-bottom: 2rem;
 		}
 
+	}
+
+	@media(max-width: 425px) {
+		.content-global {
+			padding-left: 0;
+		}
 	}
 
 .box-description-global {
@@ -552,6 +614,13 @@ a {
 	text-shadow: 0px 0px 0.5px black;
 	line-height: 1.75rem;
 }
+
+	@media(max-width: 425px) {
+		.p-global {
+			width: auto;
+		}
+	}
+
 .global-goals {
     /* width: 700px; */
     z-index: 1;
@@ -580,6 +649,12 @@ a {
 	align-items: flex-start; */
 }
 
+	@media(max-width: 768px) {
+		.content {
+			width: 90%;
+		}
+	}
+
 .box_title {
 	height: 25vw;
 	padding-bottom: 2rem;
@@ -590,6 +665,13 @@ a {
 	color: #1D1D1D;
 }
 
+	@media(max-width: 425px) {
+		.box_title {
+			height: auto;
+			padding-left: 0;
+		}
+	}
+
 .box_title h2 {
 	width: 23rem;
 	padding-bottom: 2rem;
@@ -599,6 +681,13 @@ a {
 	font-size: 3.125rem;
 }
 
+	@media(max-width: 425px) {
+		.box_title h2 {
+			width: auto;
+			font-size: 2.5rem;
+		}
+	}
+
 .box_title p{
 	width: 25rem;
 	font-family: 'proxima-nova', 'Nunito Sans', sans-serif;
@@ -607,11 +696,25 @@ a {
 	line-height: 1.625rem;
 }
 
+	@media(max-width: 425px) {
+		.box_title p {
+			width: auto;
+			font-size: 1rem;
+		}
+	}
+
 .wrap-rede{
 	width: 100%;
 	display: flex;
 	padding-bottom: 1.5rem;
 }
+
+	@media(max-width: 768px) {
+		.wrap-rede { 
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
 .box-rede {
 	width: 18rem;
@@ -620,6 +723,12 @@ a {
 	background-color: #F0F2F5;
 	margin-right: 2.3125rem
 }
+
+	@media(max-width: 768px) {
+		.box-rede {
+			margin-bottom: 2rem;
+		}
+	}
 
 .rede-descricao {
 	height: 42%;
@@ -742,6 +851,12 @@ a {
 	width: 70%;
 	padding-left: 1.5rem;
 }
+
+	@media(max-width: 768px) {
+		.content-premio {
+			width: 90%;
+		}
+	}
  
 .r_inovacao {
 	width: 100%;
@@ -750,8 +865,13 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
+
+	@media(max-width: 425px) {
+		.r_inovacao {
+			padding-left: 0;
+		}
+	}
 
 
 .box-title-premio {
@@ -773,6 +893,12 @@ a {
 	display: flex;
 }
 
+	@media(max-width: 425px) {
+		.box-description-premio {
+			height: auto;
+		}
+	}
+
 .figure-premio {
 	padding-right: 2.5rem;
 	height: fit-content;
@@ -780,13 +906,37 @@ a {
 	align-items: center;
 }
 
+	@media(max-width: 768px) {
+		.figure-premio {
+			padding-right: 0;
+		}
+	}
+
+	@media(max-width: 768px) {
+		.figure-premio {
+			display: none;
+		}
+	}
+
 .logo_premio {
 	padding: 1rem;
 }
 
+	@media(max-width: 768px) {
+		.logo_premio {
+			width: 7rem;
+		}
+	}
+
 .description-premio {
 	width: 68%;
 }
+
+	@media(max-width: 768px) {
+		.description-premio {
+			width: 100%;
+		}
+	}
 
 .iv {
 	padding-bottom: 1.5rem;
@@ -831,6 +981,12 @@ a {
 	position: relative;
 }
 
+	@media(max-width: 768px) {
+		.container-about {
+			height: auto;
+		}
+	}
+
 .wrap-about {
 	width: 70%;
 	padding-left: 1.5rem;
@@ -838,10 +994,26 @@ a {
 	/* justify-content: space-between; */
 }
 
+	@media(max-width: 768px) {
+		.wrap-about {
+			width: 90%;
+			flex-direction: column;
+			padding: 2rem 0 ;
+		}
+	}
+
 .box-description {
 	max-width: 55%;
 	margin-right: 5.5rem;
 }
+
+	@media(max-width: 768px) {
+		.box-description {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
+	}
 
 .description {
 	max-width: 392px;
@@ -854,11 +1026,24 @@ a {
 	line-height: 1.75rem;
 }
 
+	@media(max-width: 768px) {
+		.description {
+			max-width: 100%;
+			min-width: 100%;
+		}
+	}
+
 .menu-footer {
 	display: flex;
 	justify-content: center;
 	margin-right: 5.5rem;
 }
+
+	@media(max-width: 768px) {
+		.menu-footer {
+			display: none;
+		}
+	}
 
 .menu-list-footer {
 	width: 60%;
@@ -937,6 +1122,13 @@ a {
 	color: #1D1D1D;
 	font-size: 1.5625rem;
 }
+
+	@media(max-width: 425px) {
+		.author-description {
+			font-size: 1rem;
+		}
+	}
+
 /* Fim Footer */
 
 /* Nimate slide */
